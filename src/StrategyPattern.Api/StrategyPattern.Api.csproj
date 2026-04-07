@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CSharpFunctionalExtensions" Version="3.7.0" />
+        <PackageReference Include="MediatR" Version="14.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.14"/>
+        <PackageReference Include="Scalar.AspNetCore" Version="2.13.20" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Application\Extensions\" />
+      <Folder Include="Application\Features\Users\Queries\" />
+      <Folder Include="Endpoints\" />
+      <Folder Include="Infrastructure\Extensions\" />
+      <Folder Include="Pesistence\" />
+    </ItemGroup>
+
+</Project>
